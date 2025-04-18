@@ -30,12 +30,16 @@ function App() {
 			<div>Author</div>
 		</Flex>
 
-		<Flex vertical='horizontal'></Flex>
-		<Flex vertical='horizontal'></Flex>
-		<Flex vertical='horizontal'></Flex>
-		<Flex vertical='horizontal'></Flex>
-		<Flex vertical='horizontal'></Flex>
-		<Flex vertical='horizontal'></Flex>
+		<Flex vertical>
+			<div>News text</div>
+			<div>Show more</div>
+		</Flex>
+
+		<Flex></Flex>
+		<Flex></Flex>
+		<Flex></Flex>
+		<Flex></Flex>
+		<Flex></Flex>
 	</Flex>
   );
 }
