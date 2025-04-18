@@ -23,7 +23,13 @@ function App() {
 			<Title>{data?.TI}</Title>
 		</Flex>
 
-		<Flex vertical='horizontal'></Flex>
+		<Flex justify='start' gap='middle'>
+			<div>Domen</div>
+			<div>Country</div>
+			<div>Language</div>
+			<div>Author</div>
+		</Flex>
+
 		<Flex vertical='horizontal'></Flex>
 		<Flex vertical='horizontal'></Flex>
 		<Flex vertical='horizontal'></Flex>
