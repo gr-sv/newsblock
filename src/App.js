@@ -1,4 +1,4 @@
-import { Flex, Typography } from 'antd';
+import { Button, Flex, Typography } from 'antd';
 import { data } from './data.js';
 const { Title } = Typography;
 
@@ -35,8 +35,20 @@ function App() {
 			<div>Show more</div>
 		</Flex>
 
-		<Flex></Flex>
-		<Flex></Flex>
+		<Flex justify='start' gap='small'>
+			<div>key word</div>
+			<div>key word</div>
+			<div>key word</div>
+			<div>key word</div>
+			<div>key word</div>
+			<div>key word</div>
+			<div>key word</div>
+		</Flex>
+
+		<Flex>
+			<Button>Original Source</Button>
+		</Flex>
+		
 		<Flex></Flex>
 		<Flex></Flex>
 		<Flex></Flex>
