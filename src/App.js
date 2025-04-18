@@ -48,10 +48,39 @@ function App() {
 		<Flex>
 			<Button>Original Source</Button>
 		</Flex>
-		
-		<Flex></Flex>
-		<Flex></Flex>
-		<Flex></Flex>
+
+		<Flex justify='space-between'>
+			<div>Duplicates</div>
+			<div>By Revelance</div>
+		</Flex>
+
+		<Flex vertical>
+			<Flex justify='space-between'>
+				<Flex gap='middle'>
+					<time datetime={data?.DP}>Time</time>
+					<div>Top Reach</div>
+				</Flex>
+
+				<Flex gap='small'>
+					<div>i-square</div>
+					<div>empty-square</div>
+				</Flex>			
+			</Flex>
+
+			<Flex vertical='horizontal'>
+				<Title>{data?.TI}</Title>
+			</Flex>
+
+			<Flex justify='start' gap='middle'>
+				<div>Domen</div>
+				<div>Country</div>
+				<div>Author</div>
+			</Flex>
+		</Flex>
+			
+		<Flex>
+			<div>View Duplicates</div>
+		</Flex>
 	</Flex>
   );
 }
