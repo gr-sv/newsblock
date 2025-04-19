@@ -1,5 +1,6 @@
 import { Button, Flex, Typography } from 'antd';
 import { data } from './data.js';
+import DateOfNews from './components/shared/date/dateOfNews.jsx';
 const { Title } = Typography;
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
   	<Flex vertical>
 		<Flex justify='space-between'>
 			<Flex gap='middle'>
-				<time datetime={data?.DP}>Time</time>
+				<DateOfNews />
 				<div>Reach</div>
 				<div>Top Traffic</div>
 			</Flex>
@@ -19,7 +20,7 @@ function App() {
 			</Flex>			
 		</Flex>
 
-		<Flex vertical='horizontal'>
+		<Flex>
 			<Title>{data?.TI}</Title>
 		</Flex>
 
@@ -57,7 +58,7 @@ function App() {
 		<Flex vertical>
 			<Flex justify='space-between'>
 				<Flex gap='middle'>
-					<time datetime={data?.DP}>Time</time>
+					<DateOfNews />
 					<div>Top Reach</div>
 				</Flex>
 
