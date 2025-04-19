@@ -1,7 +1,7 @@
-import { Button, Flex, Typography } from 'antd';
+import { Button, Flex, Tag, Typography } from 'antd';
 import { data } from './data.js';
 import DateOfNews from './components/shared/date/dateOfNews.jsx';
-const { Title } = Typography;
+const { Link, Text, Title } = Typography;
 
 function App() {
   return (
@@ -9,14 +9,14 @@ function App() {
 		<Flex justify='space-between'>
 			<Flex gap='middle'>
 				<DateOfNews />
-				<div>Reach</div>
-				<div>Top Traffic</div>
+				<Text>{data?.REACH} Reach</Text>
+				<Text>Top Traffic:</Text>
 			</Flex>
 
 			<Flex gap='small'>
-				<div>Sentiment</div>
-				<div>i-square</div>
-				<div>empty-square</div>
+				<div>{data?.SENT}</div>
+				<div>i-icon</div>
+				<div>empty-icon</div>
 			</Flex>			
 		</Flex>
 
@@ -25,41 +25,42 @@ function App() {
 		</Flex>
 
 		<Flex justify='start' gap='middle'>
-			<div>Domen</div>
-			<div>Country</div>
-			<div>Language</div>
-			<div>Author</div>
+			<Link href={data?.DOM}>{data?.DOM}</Link>
+			<Text>{data?.CNTR}</Text>
+			<Text>{data?.LANG}</Text>
+			<Text>{data?.AU}</Text>
 		</Flex>
 
 		<Flex vertical>
-			<div>News text</div>
-			<div>Show more</div>
+			<Text>{data?.AB}</Text>
+			<Button>Show more</Button>
 		</Flex>
 
 		<Flex justify='start' gap='small'>
-			<div>key word</div>
-			<div>key word</div>
-			<div>key word</div>
-			<div>key word</div>
-			<div>key word</div>
-			<div>key word</div>
-			<div>key word</div>
+			<Tag>key word</Tag>
+			<Tag>key word</Tag>
+			<Tag>key word</Tag>
+			<Tag>key word</Tag>
+			<Tag>key word</Tag>
+			<Tag>key word</Tag>
+			<Tag>key word</Tag>
+			<Button type='text'>Show all</Button>
 		</Flex>
 
 		<Flex>
-			<Button>Original Source</Button>
+			<Button color='primary' variant='solid'>Original Source</Button>
 		</Flex>
 
 		<Flex justify='space-between'>
-			<div>Duplicates</div>
-			<div>By Revelance</div>
+			<Text>Duplicates:</Text>
+			<div>By Relevance</div>
 		</Flex>
 
 		<Flex vertical>
 			<Flex justify='space-between'>
 				<Flex gap='middle'>
 					<DateOfNews />
-					<div>Top Reach</div>
+					<Text>{data?.REACH} Reach</Text>
 				</Flex>
 
 				<Flex gap='small'>
@@ -73,14 +74,14 @@ function App() {
 			</Flex>
 
 			<Flex justify='start' gap='middle'>
-				<div>Domen</div>
-				<div>Country</div>
-				<div>Author</div>
+				<Link href={data?.DOM}>{data?.DOM}</Link>
+				<Text>{data?.CNTR}</Text>
+				<Text>{data?.AU}</Text>
 			</Flex>
 		</Flex>
 			
 		<Flex>
-			<div>View Duplicates</div>
+			<Button color='primary' variant='outlined'>View Duplicates</Button>
 		</Flex>
 	</Flex>
   );
