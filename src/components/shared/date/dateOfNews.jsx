@@ -12,7 +12,7 @@ function DateOfNews () {
 	};
 
 	return (
-		<time datetime={data?.DP}>{ date.toLocaleDateString(undefined, options) }</time>
+		<time datetime={data?.DP}>{ date.toLocaleDateString('en-GB', options) }</time>
 	)
 }
 
