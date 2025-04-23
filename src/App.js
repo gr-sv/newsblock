@@ -1,6 +1,7 @@
 import { Button, Flex, Tag, Typography } from 'antd';
 import { data } from './data.js';
 import DateOfNews from './components/shared/date/dateOfNews.jsx';
+import TopTraffic from './components/shared/topTraffic/topTraffic.jsx'
 const { Link, Text, Title } = Typography;
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
 			<Flex gap='middle'>
 				<DateOfNews />
 				<Text>{data?.REACH} Reach</Text>
-				<Text>Top Traffic:</Text>
+				<TopTraffic />
 			</Flex>
 
 			<Flex gap='small'>
