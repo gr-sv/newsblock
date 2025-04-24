@@ -1,6 +1,7 @@
 import React from 'react';
 import { data } from '../../../data.js';
 import { Flex, Typography } from 'antd';
+
 const { Text } = Typography;
 
 function TopTraffic () {

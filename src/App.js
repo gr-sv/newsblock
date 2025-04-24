@@ -1,30 +1,16 @@
 import { Button, Flex, Tag, Typography } from 'antd';
 import { data } from './data.js';
-import DateOfNews from './components/shared/date/dateOfNews.jsx';
+import DateOfNews from './components/shared/dateOfNews/dateOfNews.jsx';
 import Reach from './components/shared/reach/reach.jsx';
-import TopTraffic from './components/shared/topTraffic/topTraffic.jsx'
-import Sentiment from './components/shared/sentiment/sentiment.jsx';
+import HeaderOfNews from './components/widgets/headerOfNews/headerOfNews.jsx';
+
 const { Link, Text, Title } = Typography;
+
 
 function App() {
   return (
   	<Flex vertical>
-		<Flex justify='space-between'>
-			<Flex gap='middle'>
-				<DateOfNews />
-				<Text>
-					<Reach /> Reach
-				</Text>
-				
-				<TopTraffic />
-			</Flex>
-
-			<Flex gap='small'>
-				<Sentiment />
-				<div>i-icon</div>
-				<div>empty-icon</div>
-			</Flex>			
-		</Flex>
+		<HeaderOfNews />
 
 		<Flex>
 			<Title>{data?.TI}</Title>
