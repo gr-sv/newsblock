@@ -1,6 +1,31 @@
 :root {
-	--background: grey;
-	--text: #ffffff;
-	--text2: #B8B8B8;
-	--blue-border: #4b4bde;
+	--background: #000000;
+	--white: #ffffff;
+	--lightgray: #bfbfbf;
+	--darkgray: #595959;
+	--blue: #1890ff;
+	--blue2: #0050b3;
 }
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+html {
+	min-width: 100vw;
+	overflow-x: hidden;
+	padding: 20px;
+}
+
+body {
+	padding: 20px;
+	border: 1px solid var(--darkgray);
+	border-radius: 10px;
+}
+
+
+
