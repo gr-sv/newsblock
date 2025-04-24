@@ -3,6 +3,7 @@ import { data } from './data.js';
 import DateOfNews from './components/shared/date/dateOfNews.jsx';
 import Reach from './components/shared/reach/reach.jsx';
 import TopTraffic from './components/shared/topTraffic/topTraffic.jsx'
+import Sentiment from './components/shared/sentiment/sentiment.jsx';
 const { Link, Text, Title } = Typography;
 
 function App() {
@@ -12,14 +13,14 @@ function App() {
 			<Flex gap='middle'>
 				<DateOfNews />
 				<Text>
-					<Reach />K Reach
+					<Reach /> Reach
 				</Text>
 				
 				<TopTraffic />
 			</Flex>
 
 			<Flex gap='small'>
-				<div>{data?.SENT}</div>
+				<Sentiment />
 				<div>i-icon</div>
 				<div>empty-icon</div>
 			</Flex>			
@@ -66,7 +67,7 @@ function App() {
 				<Flex gap='middle'>
 					<DateOfNews />
 					<Text>
-						<Reach />K Top Reach
+						<Reach /> Top Reach
 					</Text>
 				</Flex>
 

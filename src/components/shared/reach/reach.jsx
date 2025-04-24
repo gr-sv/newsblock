@@ -6,7 +6,7 @@ const { Text } = Typography;
 function Reach () {
 	return (
 		<Text>
-			{Math.round(data?.REACH / 1000)}
+			{Math.round(data?.REACH / 1000)}K
 		</Text>
 	)
 }
