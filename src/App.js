@@ -3,13 +3,14 @@ import { data } from './data.js';
 import DateOfNews from './components/shared/dateOfNews/dateOfNews.jsx';
 import Reach from './components/shared/reach/reach.jsx';
 import HeaderOfNews from './components/widgets/headerOfNews/headerOfNews.jsx';
+// import s from './app.module.scss';
 
 const { Link, Text, Title } = Typography;
 
 
 function App() {
   return (
-  	<Flex vertical>
+  	<Flex vertical gap='middle'>
 		<HeaderOfNews />
 
 		<Flex>
@@ -48,7 +49,7 @@ function App() {
 			<div>By Relevance</div>
 		</Flex>
 
-		<Flex vertical>
+		<Flex vertical gap='middle'>
 			<Flex justify='space-between'>
 				<Flex gap='middle'>
 					<DateOfNews />
