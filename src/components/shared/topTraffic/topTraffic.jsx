@@ -11,9 +11,9 @@ function TopTraffic () {
 			<Text>Top Traffic:</Text>
 			
 			{(data?.TRAFFIC).map(traffic => (
-				<Text>
-					{`${traffic.value} ${Math.round(traffic.count * 100)}%`}
-				</Text>	
+				<Text key={traffic.value}>
+					{`${traffic.value === 'United States of America' ? 'USA' : traffic.value} ${Math.round(traffic.count * 100)}%`}
+			  </Text>
 			))}
 		</Flex>
 	)
