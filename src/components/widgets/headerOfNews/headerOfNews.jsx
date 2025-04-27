@@ -11,7 +11,7 @@ const { Text } = Typography;
 function HeaderOfNews () {
 	return (
 		<Flex justify='space-between'>
-			<Flex gap='middle'>
+			<Flex gap='middle' align='center'>
 				<DateOfNews />
 				<Text>
 					<Reach /> Reach
