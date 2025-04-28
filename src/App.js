@@ -3,7 +3,7 @@ import { data } from './data.js';
 import DateOfNews from './components/shared/dateOfNews/dateOfNews.jsx';
 import Reach from './components/shared/reach/reach.jsx';
 import HeaderOfNews from './components/widgets/headerOfNews/headerOfNews.jsx';
-// import s from './app.module.scss';
+import s from './app.module.scss';
 
 const { Link, Text, Title } = Typography;
 
@@ -12,17 +12,6 @@ function App() {
   return (
   	<Flex vertical gap='middle'>
 		<HeaderOfNews />
-
-		<Flex>
-			<Title>{data?.TI}</Title>
-		</Flex>
-
-		<Flex justify='start' gap='middle'>
-			<Link href={data?.DOM}>{data?.DOM}</Link>
-			<Text>{data?.CNTR}</Text>
-			<Text>{data?.LANG}</Text>
-			<Text>{data?.AU}</Text>
-		</Flex>
 
 		<Flex vertical>
 			<Text>{data?.AB}</Text>
@@ -49,7 +38,7 @@ function App() {
 			<div>By Relevance</div>
 		</Flex>
 
-		<Flex vertical gap='middle'>
+		<Flex className={s.blueBlock} vertical gap='middle'>
 			<Flex justify='space-between'>
 				<Flex gap='middle'>
 					<DateOfNews />
