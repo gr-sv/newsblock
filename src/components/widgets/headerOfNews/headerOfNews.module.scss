@@ -1,3 +1,10 @@
+.fullHeader {
+	.reachContent::after {
+		content: ' Reach';
+		color: var(--lightgray);
+	}
+}
+
 .shortHeader {
 	padding: 20px;
 	border: 1px solid var(--blue);
@@ -8,10 +15,15 @@
 	.noneLang {
 		display: none;
 	}
+
+	.reachContent::after {
+		content: ' Top Reach';
+	}
 }
 
 .title {
 	margin: 0 !important;
+	color: var(--blue2) !important;
 }
 
 

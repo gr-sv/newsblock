@@ -25,8 +25,8 @@ function HeaderOfNews ({ className, fullHeader, shortHeader, ...otherProps }) {
 				<Flex gap='middle' align='center'>
 					<DateOfNews />
 
-					<Text>
-						<Reach /> Reach
+					<Text className={s.reachContent}>
+						<Reach />
 					</Text>
 					
 					<TopTraffic className={s.noneTopTraffic} />
