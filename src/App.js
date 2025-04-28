@@ -1,17 +1,15 @@
 import { Button, Flex, Tag, Typography } from 'antd';
 import { data } from './data.js';
-import DateOfNews from './components/shared/dateOfNews/dateOfNews.jsx';
-import Reach from './components/shared/reach/reach.jsx';
 import HeaderOfNews from './components/widgets/headerOfNews/headerOfNews.jsx';
 import s from './app.module.scss';
 
-const { Link, Text, Title } = Typography;
+const { Text } = Typography;
 
 
 function App() {
   return (
   	<Flex vertical gap='middle'>
-		<HeaderOfNews />
+		<HeaderOfNews fullHeader />
 
 		<Flex vertical>
 			<Text>{data?.AB}</Text>
