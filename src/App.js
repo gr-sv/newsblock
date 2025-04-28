@@ -38,7 +38,7 @@ function App() {
 			<div>By Relevance</div>
 		</Flex>
 
-		<Flex className={s.blueBlock} vertical gap='middle'>
+		{/* <Flex className={s.blueBlock} vertical gap='middle'>
 			<Flex justify='space-between'>
 				<Flex gap='middle'>
 					<DateOfNews />
@@ -62,7 +62,9 @@ function App() {
 				<Text>{data?.CNTR}</Text>
 				<Text>{data?.AU}</Text>
 			</Flex>
-		</Flex>
+		</Flex> */}
+
+		<HeaderOfNews shortHeader />
 			
 		<Flex>
 			<Button color='primary' variant='outlined'>View Duplicates</Button>
