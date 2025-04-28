@@ -15,6 +15,7 @@ function HeaderOfNews ({ className, fullHeader, shortHeader, ...otherProps }) {
 	return (
 		<Flex
 			vertical
+			gap='middle'
 			{...otherProps}
 			className={classNames(className, {
 				[s.fullHeader]: fullHeader,
@@ -23,28 +24,27 @@ function HeaderOfNews ({ className, fullHeader, shortHeader, ...otherProps }) {
 			<Flex justify='space-between'>
 				<Flex gap='middle' align='center'>
 					<DateOfNews />
+
 					<Text>
 						<Reach /> Reach
 					</Text>
 					
-					<TopTraffic />
+					<TopTraffic className={s.noneTopTraffic} />
 				</Flex>
 
 				<Flex gap='small'>
-					<Sentiment />
+					<Sentiment className={s.noneSentiment} />
 					<div>i-icon</div>
 					<div>empty-icon</div>
 				</Flex>			
 			</Flex>
 
-			<Flex>
-				<Title>{data?.TI}</Title>
-			</Flex>
-
+			<Title className={s.title}>{data?.TI}</Title>
+			
 			<Flex justify='start' gap='middle'>
 				<Link href={data?.DOM}>{data?.DOM}</Link>
 				<Text>{data?.CNTR}</Text>
-				<Text>{data?.LANG}</Text>
+				<Text className={s.noneLang}>{data?.LANG}</Text>
 				<Text>{data?.AU}</Text>
 			</Flex>
 		</Flex>

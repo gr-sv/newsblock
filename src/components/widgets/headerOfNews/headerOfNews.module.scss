@@ -2,4 +2,16 @@
 	padding: 20px;
 	border: 1px solid var(--blue);
 	border-radius: 10px;
+
+	.noneTopTraffic,
+	.noneSentiment,
+	.noneLang {
+		display: none;
+	}
 }
+
+.title {
+	margin: 0 !important;
+}
+
+
