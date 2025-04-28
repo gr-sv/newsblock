@@ -1,7 +1,8 @@
 import React from 'react';
+import classNames from 'classnames';
 import { data } from '../../../data.js';
 
-function Sentiment () {
+function Sentiment ({ className, ...otherProps }) {
 
 	const positive = {
 		background: '#a0d911'
@@ -12,7 +13,14 @@ function Sentiment () {
 	}
 
 	return (
-		<div style={(data?.SENT === 'positive') ? positive : negative}>{data?.SENT}</div>
+		<div
+			style={(data?.SENT === 'positive') ? positive : negative}
+			{...otherProps}
+			className={classNames(
+				className,
+		)}>
+			{data?.SENT}
+		</div>
 	)
 }
 
