@@ -1,0 +1,22 @@
+@mixin defaultIcon {
+	width: 26px;
+	height: 26px;
+	padding: 0 10px;
+	border: 2px solid var(--lightgray);
+}
+
+.icon {
+	@include defaultIcon;
+
+	.iconText {
+		font-weight: bold;
+	}
+}
+
+.emptyIcon {
+	@include defaultIcon;
+
+	.iconText {
+		display: none;
+	}
+}
