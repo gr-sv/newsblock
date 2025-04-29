@@ -19,7 +19,7 @@ function TopTraffic ({ className, ...otherProps }) {
 			{(data?.TRAFFIC).map(traffic => (
 				<Text key={traffic.value}>
 					{`${traffic.value === 'United States of America' ? 'USA' : traffic.value} ${Math.round(traffic.count * 100)}%`}
-			  </Text>
+			  	</Text>
 			))}
 		</Flex>
 	)
