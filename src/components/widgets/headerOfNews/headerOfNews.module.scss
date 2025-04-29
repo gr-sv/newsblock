@@ -26,4 +26,15 @@
 	color: var(--blue2) !important;
 }
 
+.link {
+	color: var(--blue2) !important;
+	text-decoration: underline !important;
+}
+
+.country,
+.lang,
+.author {
+	color: var(--lightgray) !important;
+	text-transform: capitalize;
+}
 

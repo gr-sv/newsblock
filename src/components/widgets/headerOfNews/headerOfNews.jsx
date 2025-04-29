@@ -43,10 +43,10 @@ function HeaderOfNews ({ className, fullHeader, shortHeader, ...otherProps }) {
 			<Title className={s.title}>{data?.TI}</Title>
 			
 			<Flex justify='start' gap='middle'>
-				<Link href={data?.DOM}>{data?.DOM}</Link>
-				<Text>{data?.CNTR}</Text>
-				<Text className={s.noneLang}>{data?.LANG}</Text>
-				<Text>{data?.AU}</Text>
+				<Link className={s.link} href={data?.DOM}>{data?.DOM}</Link>
+				<Text className={s.country}>{data?.CNTR}</Text>
+				<Text className={`${s.noneLang} ${s.lang}`}>{data?.LANG}</Text>
+				<Text className={s.author}>{data?.AU}</Text>
 			</Flex>
 		</Flex>
 		
