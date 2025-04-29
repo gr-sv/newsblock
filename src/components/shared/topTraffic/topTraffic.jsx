@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
+import s from './topTraffic.module.scss';
 import { data } from '../../../data.js';
 import { Flex, Typography } from 'antd';
 
@@ -14,11 +15,11 @@ function TopTraffic ({ className, ...otherProps }) {
 			className={classNames(
 				className,
 		)}>
-			<Text>Top Traffic:</Text>
+			<Text className={s.textColor}>Top Traffic:</Text>
 			
 			{(data?.TRAFFIC).map(traffic => (
 				<Text key={traffic.value}>
-					{`${traffic.value === 'United States of America' ? 'USA' : traffic.value} ${Math.round(traffic.count * 100)}%`}
+					<span className={s.textColor}>{`${traffic.value === 'United States of America' ? 'USA' : traffic.value}`}</span> {`${Math.round(traffic.count * 100)}%`}
 			  	</Text>
 			))}
 		</Flex>
