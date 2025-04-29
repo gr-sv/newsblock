@@ -6,6 +6,7 @@ import DateOfNews from '../../shared/dateOfNews/dateOfNews';
 import Reach from '../../shared/reach/reach';
 import Sentiment from '../../shared/sentiment/sentiment';
 import TopTraffic from '../../shared/topTraffic/topTraffic';
+import Icon from '../../shared/icon/icon.jsx';
 import s from './headerOfNews.module.scss';
 
 const { Link, Text, Title } = Typography;
@@ -34,8 +35,8 @@ function HeaderOfNews ({ className, fullHeader, shortHeader, ...otherProps }) {
 
 				<Flex gap='small'>
 					<Sentiment className={s.noneSentiment} />
-					<div>i-icon</div>
-					<div>empty-icon</div>
+					<Icon icon />
+					<Icon emptyIcon />
 				</Flex>			
 			</Flex>
 

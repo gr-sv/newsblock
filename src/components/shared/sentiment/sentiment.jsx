@@ -1,6 +1,10 @@
 import React from 'react';
 import classNames from 'classnames';
+import s from './sentiment.module.scss';
 import { data } from '../../../data.js';
+import { Typography } from 'antd';
+
+const { Text } = Typography;
 
 function Sentiment ({ className, ...otherProps }) {
 
@@ -13,14 +17,15 @@ function Sentiment ({ className, ...otherProps }) {
 	}
 
 	return (
-		<div
+		<Text
 			style={(data?.SENT === 'positive') ? positive : negative}
 			{...otherProps}
 			className={classNames(
+				s.sentBackground,
 				className,
 		)}>
 			{data?.SENT}
-		</div>
+		</Text>
 	)
 }
 
