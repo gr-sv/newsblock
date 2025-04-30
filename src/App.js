@@ -1,7 +1,7 @@
 import { Button, Flex, Tag, Typography } from 'antd';
 import { data } from './data.js';
 import HeaderOfNews from './components/widgets/headerOfNews/headerOfNews.jsx';
-import s from './app.module.scss';
+import './app.module.scss';
 
 const { Text } = Typography;
 
@@ -35,32 +35,6 @@ function App() {
 			<Text>Duplicates:</Text>
 			<div>By Relevance</div>
 		</Flex>
-
-		{/* <Flex className={s.blueBlock} vertical gap='middle'>
-			<Flex justify='space-between'>
-				<Flex gap='middle'>
-					<DateOfNews />
-					<Text>
-						<Reach /> Top Reach
-					</Text>
-				</Flex>
-
-				<Flex gap='small'>
-					<div>i-square</div>
-					<div>empty-square</div>
-				</Flex>			
-			</Flex>
-
-			<Flex vertical='horizontal'>
-				<Title>{data?.TI}</Title>
-			</Flex>
-
-			<Flex justify='start' gap='middle'>
-				<Link href={data?.DOM}>{data?.DOM}</Link>
-				<Text>{data?.CNTR}</Text>
-				<Text>{data?.AU}</Text>
-			</Flex>
-		</Flex> */}
 
 		<HeaderOfNews shortHeader />
 			

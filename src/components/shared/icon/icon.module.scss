@@ -8,6 +8,7 @@
 	@include defaultIcon;
 
 	.iconText {
+		color: var(--lightgray) !important;
 		font-size: 13px !important;
 		line-height: 18px !important;
 		font-weight: bold;
