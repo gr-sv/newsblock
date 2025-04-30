@@ -1,13 +1,15 @@
 import React from 'react';
 import classNames from 'classnames';
 import s from './icon.module.scss'
-import { Typography } from 'antd';
+import { Flex, Typography } from 'antd';
 
 const { Text } = Typography;
 
 function Icon ({ className, icon, emptyIcon, ...otherProps }) {
 	return (
-		<div
+		<Flex
+			align='center'
+			justify='center'
 			{...otherProps}
 			className={classNames(className, {
 				[s.icon]: icon,
@@ -16,7 +18,7 @@ function Icon ({ className, icon, emptyIcon, ...otherProps }) {
 
 			<Text className={s.iconText}>i</Text>
 
-		</div>
+		</Flex>
 	)
 }
 

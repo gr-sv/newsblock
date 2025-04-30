@@ -1,7 +1,6 @@
 @mixin defaultIcon {
-	width: 26px;
-	height: 26px;
-	padding: 0 10px;
+	width: 22px;
+	height: 22px;
 	border: 2px solid var(--lightgray);
 }
 
@@ -9,6 +8,8 @@
 	@include defaultIcon;
 
 	.iconText {
+		font-size: 13px !important;
+		line-height: 18px !important;
 		font-weight: bold;
 	}
 }
