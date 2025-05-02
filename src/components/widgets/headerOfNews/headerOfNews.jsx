@@ -1,7 +1,12 @@
 import React from 'react';
 import classNames from 'classnames';
 import { Flex, Typography, Space } from 'antd';
-import { GlobalOutlined, UserOutlined } from '@ant-design/icons';
+import { 
+	GlobalOutlined,
+	UserOutlined,
+	FlagOutlined,
+	BookOutlined
+} from '@ant-design/icons';
 import { data } from '../../../data.js';
 import DateOfNews from '../../shared/dateOfNews/dateOfNews';
 import Reach from '../../shared/reach/reach';
@@ -44,23 +49,27 @@ function HeaderOfNews ({ className, fullHeader, shortHeader, ...otherProps }) {
 			<Title className={s.title}>{data?.TI}</Title>
 			
 			<Flex justify='start' gap='middle'>
-
 				<Space>
 					<GlobalOutlined style={{ color: '#bfbfbf' }} />
 					<Link className={s.link} href={data?.DOM}>{data?.DOM}</Link>
 				</Space>
 				
-				<Text className={s.country}>{data?.CNTR}</Text>
-				<Text className={`${s.noneLang} ${s.lang}`}>{data?.LANG}</Text>
-
+				<Space>
+					<FlagOutlined />
+					<Text className={s.country}>{data?.CNTR}</Text>
+				</Space>
+				
+				<Space>
+					<BookOutlined />
+					<Text className={`${s.noneLang} ${s.lang}`}>{data?.LANG}</Text>
+				</Space>
+				
 				<Space>
 					<UserOutlined />
 					<Text className={s.author}>{data?.AU}</Text>
 				</Space>
-				
 			</Flex>
 		</Flex>
-		
 	)	
 }
 
