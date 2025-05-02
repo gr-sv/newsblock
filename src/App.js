@@ -29,10 +29,8 @@ function App() {
 
 		<Tags />
 
-		<Flex>
-			<Button color='primary' variant='solid'>Original Source</Button>
-		</Flex>
-
+		<Button variant='solid' className={s.blueBtn}>Original Source</Button>
+		
 		<Flex justify='space-between'>
 			<Text>Duplicates:</Text>
 			<div>By Relevance</div>
@@ -41,7 +39,7 @@ function App() {
 		<HeaderOfNews shortHeader />
 			
 		<Flex>
-			<Button color='primary' variant='outlined'>View Duplicates</Button>
+			<Button variant='outlined'>View Duplicates</Button>
 		</Flex>
 	</Flex>
   );
