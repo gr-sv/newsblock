@@ -8,7 +8,11 @@
 }
 
 .blueBtn {
-	align-self: start;
+	// align-self: start;
 	background-color: var(--darkgray) !important;
 	color: var(--blue) !important;
+}
+
+.duplicates {
+	color: var(--lightgray) !important;
 }

@@ -14,7 +14,7 @@ const { Paragraph, Text } = Typography;
 function App() {
 
   return (
-  	<Flex vertical gap='middle'>
+  	<Flex vertical gap='middle' align='start'>
 		<HeaderOfNews fullHeader />
 
 		<Flex vertical align='start'>
@@ -31,8 +31,8 @@ function App() {
 
 		<Button variant='solid' className={s.blueBtn}>Original Source</Button>
 		
-		<Flex justify='space-between'>
-			<Text>Duplicates:</Text>
+		<Flex justify='space-between' style={{ width: '100%' }}>
+			<Text className={s.duplicates}>Duplicates:</Text>
 			<div>By Relevance</div>
 		</Flex>
 
