@@ -1,0 +1,11 @@
+.tag {
+	background-color: var(--background);
+	padding: 0 10px;
+	border: 1px solid var(--darkgray) !important;
+	border-radius: 15px;
+}
+
+.tagColor {
+	text-transform: capitalize;
+	color: var(--lightgray) !important;
+}

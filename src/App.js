@@ -1,9 +1,10 @@
 import React from 'react';
-import { Button, Flex, Tag, Typography } from 'antd';
+import { Button, Flex, Typography } from 'antd';
 import { data } from './data.js';
 import HeaderOfNews from './components/widgets/headerOfNews/headerOfNews.jsx';
 import './app.module.scss';
 import { CaretDownFilled } from '@ant-design/icons';
+import Tags from './components/shared/tags/tags.jsx';
 
 const { Paragraph, Text } = Typography;
 
@@ -24,16 +25,7 @@ function App() {
 			<Button type='text' icon={<CaretDownFilled />} iconPosition='end'>Show more</Button>
 		</Flex>
 
-		<Flex justify='start' gap='small'>
-			<Tag>key word</Tag>
-			<Tag>key word</Tag>
-			<Tag>key word</Tag>
-			<Tag>key word</Tag>
-			<Tag>key word</Tag>
-			<Tag>key word</Tag>
-			<Tag>key word</Tag>
-			<Button type='text'>Show all</Button>
-		</Flex>
+		<Tags />
 
 		<Flex>
 			<Button color='primary' variant='solid'>Original Source</Button>
