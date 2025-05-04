@@ -6,7 +6,11 @@
 	border-radius: 15px;
 }
 
-.tagColor {
+.valueColor {
 	text-transform: capitalize;
 	color: var(--lightgray) !important;
+}
+
+.countColor {
+	color: var(--white);
 }

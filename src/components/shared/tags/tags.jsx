@@ -10,7 +10,7 @@ function Tags () {
 
 			{(data?.KW).map(kw => (
 				<Tag key={kw.value} className={s.tag}>
-					<span className={s.tagColor}>{`${kw.value}`}</span> {kw.count}
+					<span className={s.valueColor}>{`${kw.value}`}</span> <span className={s.countColor}>{kw.count}</span>
 				</Tag>
 			))}
 
