@@ -1,0 +1,19 @@
+.text {
+	font-size: 20px;
+	line-height: 32px;
+}
+
+.showMoreBtn,
+.blueBtn {
+	font-size: 20px;
+	line-height: 32px;
+	color: var(--blue2);
+}
+
+.blueBtn {
+	align-self: start;
+	padding: 20px 15px;
+	color: var(--blue);
+	background-color: var(--darkgray);
+	border: none;
+} 
