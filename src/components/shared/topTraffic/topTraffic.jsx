@@ -2,9 +2,8 @@ import React from 'react';
 import classNames from 'classnames';
 import s from './topTraffic.module.scss';
 import { data } from '../../../data.js';
-import { Flex, Typography } from 'antd';
+import { Flex } from 'antd';
 
-const { Text } = Typography;
 
 function TopTraffic ({ className, ...otherProps }) {
 
@@ -15,12 +14,12 @@ function TopTraffic ({ className, ...otherProps }) {
 			className={classNames(
 				className,
 		)}>
-			<Text className={s.textColor}>Top Traffic:</Text>
+			<p className={s.textColor}>Top Traffic:</p>
 			
 			{(data?.TRAFFIC).map(traffic => (
-				<Text key={traffic.value}>
-					<span className={s.textColor}>{`${traffic.value === 'United States of America' ? 'USA' : traffic.value}`}</span> {`${Math.round(traffic.count * 100)}%`}
-			  	</Text>
+				<p key={traffic.value}>
+					<span className={s.valueColor}>{`${traffic.value === 'United States of America' ? 'USA' : traffic.value}`}</span> <span className={s.countColor}>{`${Math.round(traffic.count * 100)}%`}</span>
+			  	</p>
 			))}
 		</Flex>
 	)
