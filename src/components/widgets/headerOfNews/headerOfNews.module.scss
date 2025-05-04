@@ -10,9 +10,9 @@
 	border: 1px solid var(--blue);
 	border-radius: 10px;
 
-	.noneTopTraffic,
-	.noneSentiment,
-	.noneLang {
+	.topTraffic,
+	.sentiment,
+	.lang {
 		display: none;
 	}
 
@@ -22,18 +22,19 @@
 }
 
 .title {
-	margin: 0 !important;
-	color: var(--blue2) !important;
+	color: var(--blue2);
 }
 
-.link {
-	color: var(--blue2) !important;
-	text-decoration: underline !important;
+.linkText {
+	font-size: 16px;
+	line-height: 28px;
+	color: var(--blue2);
+	text-decoration: underline;
 }
 
 .country,
 .lang,
 .author {
-	color: var(--lightgray) !important;
+	color: var(--lightgray);
 	text-transform: capitalize;
 }

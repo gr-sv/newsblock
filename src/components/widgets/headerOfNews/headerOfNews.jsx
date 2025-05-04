@@ -18,6 +18,7 @@ import s from './headerOfNews.module.scss';
 const { Link } = Typography;
 
 function HeaderOfNews ({ className, fullHeader, shortHeader, ...otherProps }) {
+
 	return (
 		<Flex
 			vertical
@@ -33,11 +34,11 @@ function HeaderOfNews ({ className, fullHeader, shortHeader, ...otherProps }) {
 
 					<Reach className={s.reachContent} />
 					
-					<TopTraffic className={s.noneTopTraffic} />
+					<TopTraffic className={s.topTraffic} />
 				</Flex>
 
 				<Flex gap='middle'>
-					<Sentiment className={s.noneSentiment} />
+					<Sentiment className={s.sentiment} />
 					<Icon infoIcon />
 					<Icon emptyIcon />
 				</Flex>			
@@ -48,22 +49,24 @@ function HeaderOfNews ({ className, fullHeader, shortHeader, ...otherProps }) {
 			<Flex justify='start' gap='middle'>
 				<Space>
 					<GlobalOutlined />
-					<Link className={s.link} href={data?.DOM}>{data?.DOM}</Link>
+					<Link href={data?.DOM}>
+						<span className={s.linkText}>{data?.DOM}</span>
+					</Link>
 				</Space>
 				
-				<Space>
+				<Space className={s.country}>
 					<FlagOutlined />
-					<p className={s.country}>{data?.CNTR}</p>
+					<p>{data?.CNTR}</p>
 				</Space>
 				
-				<Space>
+				<Space className={s.lang}>
 					<BookOutlined />
-					<p className={`${s.noneLang} ${s.lang}`}>{data?.LANG}</p>
+					<p>{data?.LANG}</p>
 				</Space>
 				
-				<Space>
+				<Space className={s.author}>
 					<UserOutlined />
-					<p className={s.author}>{data?.AU}</p>
+					<p>{data?.AU}</p>
 				</Space>
 			</Flex>
 		</Flex>
