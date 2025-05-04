@@ -15,7 +15,6 @@ function DateOfNews ({ className, ...otherProps }) {
 
 	const fullDate = date.toLocaleDateString('en-GB', options);
 
-
 	return (
 		<time
 			datetime={data?.DP}

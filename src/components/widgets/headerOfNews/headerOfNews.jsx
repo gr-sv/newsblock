@@ -32,9 +32,7 @@ function HeaderOfNews ({ className, fullHeader, shortHeader, ...otherProps }) {
 				<Flex gap='middle' align='center'>
 					<DateOfNews />
 
-					<div className={s.reachContent}>
-						<Reach />
-					</div>
+					<Reach className={s.reachContent} />
 					
 					<TopTraffic className={s.noneTopTraffic} />
 				</Flex>
@@ -70,7 +68,7 @@ function HeaderOfNews ({ className, fullHeader, shortHeader, ...otherProps }) {
 				</Space>
 			</Flex>
 		</Flex>
-	)	
+	)
 }
 
 export default HeaderOfNews;

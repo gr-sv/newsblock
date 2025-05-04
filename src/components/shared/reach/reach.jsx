@@ -1,14 +1,17 @@
 import React from 'react';
+import classNames from 'classnames';
 import { data } from '../../../data.js';
-import { Typography } from 'antd';
 
-const { Text } = Typography;
-
-function Reach () {
+function Reach ({ className, ...otherProps }) {
 	return (
-		<Text>
+		<p
+		{...otherProps}
+		className={classNames(className, {
+			className,
+	})}
+		>
 			{Math.round(data?.REACH / 1000)}K
-		</Text>
+		</p>
 	)
 }
 
