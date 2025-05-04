@@ -1,9 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import s from './icon.module.scss'
-import { Flex, Typography } from 'antd';
-
-const { Text } = Typography;
+import { Flex } from 'antd';
 
 function Icon ({ className, icon, emptyIcon, ...otherProps }) {
 	return (
@@ -16,8 +14,7 @@ function Icon ({ className, icon, emptyIcon, ...otherProps }) {
 				[s.emptyIcon]: emptyIcon,
 			})}>
 
-			<Text className={s.iconText}>i</Text>
-
+			<p className={s.iconText}>i</p>
 		</Flex>
 	)
 }
