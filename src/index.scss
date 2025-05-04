@@ -22,6 +22,8 @@ html {
 }
 
 body {
+	background-color: var(--background);
+	color: var(--white) !important;
 	padding: 20px;
 	border: 1px solid var(--darkgray);
 	border-radius: 10px;
