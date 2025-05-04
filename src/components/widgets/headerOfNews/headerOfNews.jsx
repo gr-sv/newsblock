@@ -15,7 +15,7 @@ import TopTraffic from '../../shared/topTraffic/topTraffic';
 import Icon from '../../shared/icon/icon.jsx';
 import s from './headerOfNews.module.scss';
 
-const { Link, Text, Title } = Typography;
+const { Link } = Typography;
 
 
 function HeaderOfNews ({ className, fullHeader, shortHeader, ...otherProps }) {
@@ -32,9 +32,9 @@ function HeaderOfNews ({ className, fullHeader, shortHeader, ...otherProps }) {
 				<Flex gap='middle' align='center'>
 					<DateOfNews />
 
-					<Text className={s.reachContent}>
+					<div className={s.reachContent}>
 						<Reach />
-					</Text>
+					</div>
 					
 					<TopTraffic className={s.noneTopTraffic} />
 				</Flex>
@@ -46,27 +46,27 @@ function HeaderOfNews ({ className, fullHeader, shortHeader, ...otherProps }) {
 				</Flex>			
 			</Flex>
 
-			<Title className={s.title}>{data?.TI}</Title>
+			<h1 className={s.title}>{data?.TI}</h1>
 			
 			<Flex justify='start' gap='middle'>
 				<Space>
-					<GlobalOutlined style={{ color: '#bfbfbf' }} />
+					<GlobalOutlined />
 					<Link className={s.link} href={data?.DOM}>{data?.DOM}</Link>
 				</Space>
 				
 				<Space>
 					<FlagOutlined />
-					<Text className={s.country}>{data?.CNTR}</Text>
+					<p className={s.country}>{data?.CNTR}</p>
 				</Space>
 				
 				<Space>
 					<BookOutlined />
-					<Text className={`${s.noneLang} ${s.lang}`}>{data?.LANG}</Text>
+					<p className={`${s.noneLang} ${s.lang}`}>{data?.LANG}</p>
 				</Space>
 				
 				<Space>
 					<UserOutlined />
-					<Text className={s.author}>{data?.AU}</Text>
+					<p className={s.author}>{data?.AU}</p>
 				</Space>
 			</Flex>
 		</Flex>

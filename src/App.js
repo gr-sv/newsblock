@@ -6,24 +6,24 @@ import s from'./app.module.scss';
 
 function App() {
 
-  return (
-  	<Flex vertical gap='middle' align='start'>
-		<HeaderOfNews fullHeader />
+	return (
+		<Flex vertical gap='middle'>
+			<HeaderOfNews fullHeader />
 
-		<BodyOfNews />
+			<BodyOfNews />
 
-		<Flex justify='space-between' style={{ width: '100%' }}>
-			<p className={s.duplicates}>Duplicates:</p>
-			<div>By Relevance</div>
+			<Flex justify='space-between' style={{ width: '100%' }}>
+				<p className={s.duplicates}>Duplicates:</p>
+				<div>By Relevance</div>
+			</Flex>
+
+			<HeaderOfNews shortHeader />
+				
+			<Flex>
+				<Button variant='outlined'>View Duplicates</Button>
+			</Flex>
 		</Flex>
-
-		<HeaderOfNews shortHeader />
-			
-		<Flex>
-			<Button variant='outlined'>View Duplicates</Button>
-		</Flex>
-	</Flex>
-  );
+	);
 }
 
 export default App;
