@@ -1,16 +1,16 @@
 @mixin defaultIcon {
-	width: 22px;
-	height: 22px;
+	width: 28px;
+	height: 28px;
 	border: 2px solid var(--lightgray);
 }
 
-.icon {
+.infoIcon {
 	@include defaultIcon;
 
 	.iconText {
-		color: var(--lightgray) !important;
-		font-size: 13px !important;
-		line-height: 18px !important;
+		color: var(--lightgray);
+		font-size: 16px;
+		line-height: 24px;
 		font-weight: bold;
 	}
 }

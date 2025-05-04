@@ -3,14 +3,14 @@ import classNames from 'classnames';
 import s from './icon.module.scss'
 import { Flex } from 'antd';
 
-function Icon ({ className, icon, emptyIcon, ...otherProps }) {
+function Icon ({ className, infoIcon, emptyIcon, ...otherProps }) {
 	return (
 		<Flex
 			align='center'
 			justify='center'
 			{...otherProps}
 			className={classNames(className, {
-				[s.icon]: icon,
+				[s.infoIcon]: infoIcon,
 				[s.emptyIcon]: emptyIcon,
 			})}>
 

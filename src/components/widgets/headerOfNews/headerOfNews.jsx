@@ -36,9 +36,9 @@ function HeaderOfNews ({ className, fullHeader, shortHeader, ...otherProps }) {
 					<TopTraffic className={s.noneTopTraffic} />
 				</Flex>
 
-				<Flex gap='small'>
+				<Flex gap='middle'>
 					<Sentiment className={s.noneSentiment} />
-					<Icon icon />
+					<Icon infoIcon />
 					<Icon emptyIcon />
 				</Flex>			
 			</Flex>
