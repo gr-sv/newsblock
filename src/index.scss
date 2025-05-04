@@ -1,3 +1,19 @@
+@font-face {
+	font-family: 'Roboto';
+	font-weight: 400;
+	font-style: normal;
+	src: url(../public/assets/fonts/roboto-v30-cyrillic-ext_latin-regular.woff2);
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	font-weight: 700;
+	font-style: normal;
+	src: url(../public/assets/fonts/roboto-v30-cyrillic-ext_latin-700.woff2);
+	font-display: swap;
+}
+
 :root {
 	--background: #000000;
 	--white: #ffffff;
@@ -22,6 +38,10 @@ html {
 }
 
 body {
+	font-family: 'Roboto', 'Arial', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
 	color: var(--white);
 	background-color: var(--background);
 	padding: 20px;
