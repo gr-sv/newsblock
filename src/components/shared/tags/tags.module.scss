@@ -1,14 +1,14 @@
 .tag {
 	font-size: 16px;
 	background-color: var(--background);
-	padding: 5px 12px;
-	border: 1px solid var(--darkgray) !important;
+	padding: 5px 15px;
+	border: 1px solid var(--darkgray);
 	border-radius: 15px;
 }
 
 .valueColor {
 	text-transform: capitalize;
-	color: var(--lightgray) !important;
+	color: var(--lightgray);
 }
 
 .countColor {
