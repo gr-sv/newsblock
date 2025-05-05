@@ -4,7 +4,6 @@ import { Flex, Tag } from 'antd';
 import s from './tags.module.scss'
 
 function Tags () {
-
 	return (
 		<Flex justify='start' gap='small'>
 
@@ -16,7 +15,6 @@ function Tags () {
 
 		</Flex>
 	)
-
 }
 
 export default Tags;

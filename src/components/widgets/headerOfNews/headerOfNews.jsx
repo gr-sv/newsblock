@@ -18,7 +18,6 @@ import s from './headerOfNews.module.scss';
 const { Link } = Typography;
 
 function HeaderOfNews ({ className, fullHeader, shortHeader, ...otherProps }) {
-
 	return (
 		<Flex
 			vertical

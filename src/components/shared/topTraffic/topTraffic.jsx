@@ -6,7 +6,6 @@ import { Flex } from 'antd';
 
 
 function TopTraffic ({ className, ...otherProps }) {
-
 	return (
 		<Flex
 			gap='5px'

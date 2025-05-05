@@ -24,8 +24,7 @@ function BodyOfNews () {
 			<Tags />
 			
 			<Button variant='filled' className={s.blueBtn}>Original Source</Button>
-		</Flex>
-		
+		</Flex>		
 	)
 }
 
