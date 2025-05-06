@@ -19,7 +19,7 @@ function BodyOfNews () {
 
 			<Tags />
 
-			<Button>
+			<Button button_source>
 				Original Source
 			</Button>
 		</Flex>		

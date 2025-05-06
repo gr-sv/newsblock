@@ -1,16 +1,31 @@
 .button {
+	display: block;
 	font-size: 20px;
 	line-height: 32px;
-	display: block;
+	color: var(--blue);
+	background-color: transparent;
 	border: none;
 	border-radius: 0;
 	text-transform: capitalize;
 	cursor: pointer;
 	transition: .3s;
+
+	&:hover {
+		color: var(--blue2);
+	}
+
+	&:active {
+		transform: scale(.95);
+	}
 }
 
 .button_showMore {
-	padding: 5px 0;
-	color: var(--blue);
-	background-color: transparent;
+	padding: 5px 0;	
+}
+
+.button_source {
+	align-self: start;
+	padding: 10px 15px;
+	background-color: var(--darkgray2);
+	border-radius: 15px;
 }
