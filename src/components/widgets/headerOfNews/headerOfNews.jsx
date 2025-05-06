@@ -47,24 +47,24 @@ function HeaderOfNews ({ className, fullHeader, shortHeader, ...otherProps }) {
 			
 			<Flex justify='start' gap='middle'>
 				<Space>
-					<GlobalOutlined />
+					<GlobalOutlined className={s.iconColor}/>
 					<Link href={data?.DOM}>
 						<span className={s.linkText}>{data?.DOM}</span>
 					</Link>
 				</Space>
 				
 				<Space className={s.country}>
-					<FlagOutlined />
+					<FlagOutlined className={s.iconColor}/>
 					<p>{data?.CNTR}</p>
 				</Space>
 				
 				<Space className={s.lang}>
-					<BookOutlined />
+					<BookOutlined className={s.iconColor}/>
 					<p>{data?.LANG}</p>
 				</Space>
 				
 				<Space className={s.author}>
-					<UserOutlined />
+					<UserOutlined className={s.iconColor}/>
 					<p>{data?.AU}</p>
 				</Space>
 			</Flex>
