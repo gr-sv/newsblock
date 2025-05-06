@@ -16,8 +16,8 @@ function Button ({
 			className={classNames(s.button, className, {
 				[s.button_showMore]: button_showMore,
 				[s.button_source]: button_source,
-				// [s.button_sorting]: button_sorting,
-				// [duplicates]: button_duplicates,
+				[s.button_sorting]: button_sorting,
+				[s.button_duplicates]: button_duplicates,
 			})}>
 			{ children }
 		</button>

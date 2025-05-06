@@ -1,7 +1,8 @@
 import React from 'react';
-import { Button, Flex } from 'antd';
+import { Flex } from 'antd';
 import HeaderOfNews from '../headerOfNews/headerOfNews';
 import s from './duplicates.module.scss'
+import Button from '../../shared/button/button.jsx';
 import { DownOutlined } from '@ant-design/icons';
 
 function Duplicates () {
@@ -10,28 +11,15 @@ function Duplicates () {
 			<Flex justify='space-between' style={{ width: '100%' }}>
 				<p className={s.text}>Duplicates:</p>
 
-				<Button
-					type='text'
-					icon={<DownOutlined style={{ color: '#ffffff' }}/>}
-					iconPosition='end'
-				>
-					<span className={s.btnColor}>By Relevance</span>
+				<Button button_sorting>
+					By Relevance <DownOutlined />
 				</Button>
 			</Flex>
 					
 			<HeaderOfNews shortHeader />
-									
-			<Button
-				variant='outlined'
-				icon={<DownOutlined style={{ color: '#ffffff' }}/>}
-				iconPosition='start'
-				style={{
-					background: '#000000', 
-					borderColor: '#bfbfbf',
-					padding: '30px',
-				}}
-			>
-				<span className={s.btnView}>View Duplicates</span>
+
+			<Button button_duplicates>
+				<DownOutlined /> View Duplicates
 			</Button>
 		</Flex>
 	)

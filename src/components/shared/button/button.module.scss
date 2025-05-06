@@ -15,12 +15,12 @@
 	}
 
 	&:active {
-		transform: scale(.95);
+		transform: scale(.98);
 	}
 }
 
 .button_showMore {
-	padding: 5px 0;	
+	padding: 5px 0;
 }
 
 .button_source {
@@ -28,4 +28,28 @@
 	padding: 10px 15px;
 	background-color: var(--darkgray2);
 	border-radius: 15px;
+}
+
+.button_sorting {
+	color: var(--lightgray);
+
+	&:hover {
+		color: var(--darkgray2);
+	}
+}
+
+.button_duplicates {
+	padding: 10px 15px;
+	color: var(--white);
+	border: 1px solid var(--lightgray);
+	border-radius: 15px;
+
+	&:hover {
+		color: var(--lightgray);
+		border-color: var(--darkgray);
+	}
+
+	&:active {
+		transform: scale(.995);
+	}
 }
