@@ -1,21 +1,25 @@
 import React from 'react';
-import { data } from '../../../data.js';
+// import { data } from '../../../data.js';
 import { Flex } from 'antd';
-import s from './bodyOfNews.module.scss';
-import { CaretDownFilled } from '@ant-design/icons';
+// import s from './bodyOfNews.module.scss';
+// import { CaretDownFilled } from '@ant-design/icons';
 import Tags from '../../shared/tags/tags.jsx';
 import Button from '../../shared/button/button.jsx';
+import Highlights from '../../shared/highlights/highlights.jsx';
 
 function BodyOfNews () {
 	return (
 		<Flex vertical gap='large'>
-			<Flex vertical align='start'>
+
+			<Highlights />
+
+			{/* <Flex vertical align='start'>
 				<p className={s.text}>{data?.AB}</p>
 
 				<Button button_showMore>
 					Show more <CaretDownFilled />
 				</Button>
-			</Flex>
+			</Flex> */}
 
 			<Tags />
 
