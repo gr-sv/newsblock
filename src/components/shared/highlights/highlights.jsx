@@ -1,20 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import { data } from "../../../data.js";
 import Button from "../button/button.jsx";
-import { Flex } from "antd";
+import { Flex, Typography } from 'antd';
 import { CaretDownFilled } from '@ant-design/icons';
 import s from './highlights.module.scss';
 
+const { Paragraph } = Typography;
+
 function Highlights () {
+
+	const [ellipsis, setEllipsis] = useState(true);
+
+
 	return (
 		<Flex vertical align='start'>
-			<p>
-				{(data?.HIGHLIGHTS).map((element) => (
-					<span key={element} className={s.text}>{element}; </span>
-				))}
-			</p>
+			<Paragraph className={s.text} ellipsis={ellipsis ? { rows: 3, expandable: true, symbol: '' } : false}>
+				
+				{(data?.HIGHLIGHTS).join('; ')}
 
-			<Button button_showMore>
+			</Paragraph>
+
+			<Button
+				button_showMore
+				onClick={() => (
+					setEllipsis(!ellipsis)
+				)}
+			>
 				Show more <CaretDownFilled />
 			</Button>
 		</Flex>
