@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { data } from "../../../data.js";
 import Button from "../button/button.jsx";
 import { Flex, Typography } from 'antd';
-// import { CaretDownFilled } from '@ant-design/icons';
+import { CaretDownFilled } from '@ant-design/icons';
 import s from './highlights.module.scss';
 
 const { Paragraph } = Typography;
@@ -10,12 +10,6 @@ const { Paragraph } = Typography;
 function Highlights () {
 
 	const [ellipsis, setEllipsis] = useState(true);
-	const [text, setText] = useState('Show more');
-
-	function changeButton () {
-		setEllipsis(!ellipsis);
-		setText('Show less');
-	}
 
 	return (
 		<Flex vertical align='start'>
@@ -25,9 +19,9 @@ function Highlights () {
 
 			<Button
 				button_showMore
-				onClick={changeButton}
+				onClick={() => setEllipsis(!ellipsis)}
 			>
-				{text}
+				Show more < CaretDownFilled/>
 			</Button>
 		</Flex>
 	)
