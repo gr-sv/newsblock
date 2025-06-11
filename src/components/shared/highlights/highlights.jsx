@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { data } from "../../../data.js";
 import Button from "../button/button.jsx";
 import { Flex, Typography } from 'antd';
-import { CaretDownFilled, CaretUpFilled } from '@ant-design/icons';
 import s from './highlights.module.scss';
 
 const { Paragraph } = Typography;
@@ -19,7 +18,10 @@ function Highlights () {
 
 	return (
 		<Flex vertical align='start'>
-			<Paragraph className={s.text} ellipsis={ellipsis ? { rows: 3, expandable: true, symbol: '' } : false}>
+			<Paragraph
+				className={s.text}
+				ellipsis={ellipsis ? { rows: 3, expandable: true, symbol: '' } : false}
+			>
 				{(data?.HIGHLIGHTS).join('; ')}
 			</Paragraph>
 			
