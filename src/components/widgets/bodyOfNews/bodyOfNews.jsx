@@ -2,7 +2,7 @@ import React from 'react';
 import { Flex } from 'antd';
 import Tags from '../../shared/tags/tags.jsx';
 import Button from '../../shared/button/button.jsx';
-import Highlights from '../../shared/highlights_2/highlights_2.jsx';
+import Highlights from '../../shared/highlights/highlights.jsx';
 
 function BodyOfNews () {
 	return (
