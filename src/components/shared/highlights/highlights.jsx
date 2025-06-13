@@ -39,7 +39,7 @@ function Highlights() {
 		setEllipsis(!ellipsis);
 	};
 
-	const highlightsParsed = data?.HIGHLIGHTS.map((text, idx) => (
+	const highlightsParsed = data?.HIGHLIGHTS?.map((text, idx) => (
 		<React.Fragment key={idx}>
 			{parseKwTags(text)}{idx < data.HIGHLIGHTS.length - 1 ? '; ' : ''}
 		</React.Fragment>
