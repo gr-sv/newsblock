@@ -28,8 +28,17 @@
 .linkText {
 	font-size: 16px;
 	line-height: 28px;
-	color: var(--blue2);
+	color: var(--blue);
 	text-decoration: underline;
+	transition: .3s;
+
+	&:hover {
+		color: var(--blue2);
+	}
+
+	&:active {
+		color: var(--darkgray2);
+	}
 }
 
 .country,

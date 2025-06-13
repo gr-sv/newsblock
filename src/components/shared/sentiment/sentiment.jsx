@@ -6,11 +6,11 @@ import { data } from '../../../data.js';
 function Sentiment ({ className, ...otherProps }) {
 
 	const positive = {
-		background: '#a0d911'
+		background: '#93bf24'
 	}
 
 	const negative = {
-		background: '#f5222d'
+		background: '#db373f'
 	}
 
 	return (
